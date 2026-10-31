@@ -53,7 +53,7 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "name": "<?= $company3 ?>",
-      "url": "<?= site_url() ?>",
+      "url": "<?= @$url ?>",
       "logo": "<?= base_url() ?>assets/img/logo/favicon.png"
     }
   </script>
@@ -62,7 +62,7 @@
       "@context": "http://schema.org",
       "@type": "LocalBusiness",
       "name": "<?= $company3 ?>",
-      "url": "<?= site_url() ?>",
+      "url": "<?= @$url ?>",
       "image": ["<?= base_url() ?>assets/img/logo/favicon.png"],
       "address": {
         "@type": "PostalAddress",
