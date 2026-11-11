@@ -41,7 +41,7 @@ if (strtolower($city) == "") {
 
           <!-- Services List -->
           <h3 class='city-section-title-sm mt-4'>Services Available for Household, Office & Vehicles in  $city</h3>
-          <p> $company3  handles a wide range of relocation needs:</p>
+          <p> $company3 handles a wide range of relocation needs:</p>
           <ul class='city-checklist'>
             <li><i class='bi bi-check2-circle'></i> Household relocation in  $city</li>
             <li><i class='bi bi-check2-circle'></i> Office and commercial shifting</li>
