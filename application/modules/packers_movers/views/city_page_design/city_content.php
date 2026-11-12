@@ -14,57 +14,46 @@ if (strtolower($city) == "") {
    
    ";
 } else {
-   $htmlcontent = "
-            <p>
-              Planning a move in <strong> $city </strong>? Here's what you need to know. Traffic delays, apartment timing rules, narrow society lanes, and sudden weather changes can turn a simple shifting job into a long day. That's exactly where <strong> $company3 </strong> helps. We've been handling household relocation, office shifting, bike transport, and local moving in  $city  with trained staff, proper packing methods, and practical planning that actually works on ground level.
-            </p>
-            <p>
-              People searching for <strong>Top Packers and Movers in  $city </strong> usually want one thing — safe shifting without confusion. Nobody wants broken furniture or late delivery calls after packing their whole house.
-            </p>
-          </div>
+   $htmlcontent = "<h2>Best Packers and Movers in $city for Safe, Affordable and Reliable Relocation</h2>
 
-          <!-- Feature Pills -->
-          <div class='city-feature-pills'>
-            <div class='city-pill'><i class='bi bi-shield-check'></i> 100% Insured Shifting</div>
-            <div class='city-pill'><i class='bi bi-truck'></i> Real-time GPS Tracking</div>
-            <div class='city-pill'><i class='bi bi-box-seam'></i> Premium Multi-layer Packing</div>
-            <div class='city-pill'><i class='bi bi-clock-history'></i> On-Time Delivery Guaranteed</div>
-          </div>
-       
+            <p>Are you looking for reliable packers and movers in $city? Then we are welcome to choose our company Omraj Packers and Movers which is an <b>ISO 9001:2015 certified</b> and <b>government-approved relocation partner</b>, backed by 40+ years of claimed experience in providing relocation solutions across India. We provide services related to shifting of household goods, office relocation, packing, loading, unloading, transporting and warehousing solutions for working professionals and businessmen. For local shifting, the charges may start from <b>&#8377;3,000 to &#8377;6,000</b> for small moving while for 1 BHK shifting, it may start from <b>&#8377;4,000 to &#8377;10,000</b>. On the other hand, the approximate charges for 2 BHK shifting may be ranging from <b>&#8377;7,000 to &#8377;16,000</b>. However, the exact charges would depend on the quantity of goods, distance, packing material and accessibility of floors and transportation.
+            </p>
+
+            <p>
+              Moving may not be an easy task as you have much work to do such as packing furniture, kitchen appliances, fragile and valuable goods, documents etc. Our team members treat goods carefully, talk politely and perform shifts according to the schedule. We choose vehicles according to the volume of the consignment, small goods carriers in case of small shifting and large closed trucks for heavy shifting and long distance transportation. Before dispatching, we consider the road condition, total distance in kilometres, restrictions along the route and estimated travelling time. GPS tracking is available if the vehicle and transport arrangement support it. 
+            </p>
    ";
-   $htmlcontent1 = "
-    <!-- What Makes Relocation Different -->
-        <div class='city-content-card mt-4'>
-          <h3 class='city-section-title-sm'>What Makes Local Relocation in  $city Different?</h3>
-          <p>Every city has its own moving challenges. In <strong> $city</strong>, monsoon season means extra waterproof wrapping is necessary for wooden furniture and electronics. Some residential areas also have limited parking access for larger trucks, so arranging a local tempo becomes important.</p>
-          <p>That's why families looking for <strong>Best Packers and Movers in  $city</strong> prefer experienced movers instead of random transport vendors. Timing coordination, building permissions, unloading sequence, and proper carton labeling save a lot of confusion later.</p>
 
-          <!-- Services List -->
-          <h3 class='city-section-title-sm mt-4'>Services Available for Household, Office & Vehicles in  $city</h3>
-          <p> $company3 handles a wide range of relocation needs:</p>
-          <ul class='city-checklist'>
-            <li><i class='bi bi-check2-circle'></i> Household relocation in  $city</li>
-            <li><i class='bi bi-check2-circle'></i> Office and commercial shifting</li>
-            <li><i class='bi bi-check2-circle'></i> Bike and car transportation</li>
-            <li><i class='bi bi-check2-circle'></i> Local moving within  $city</li>
-            <li><i class='bi bi-check2-circle'></i> Storage and warehouse support</li>
-            <li><i class='bi bi-check2-circle'></i> Loading and unloading assistance</li>
-          </ul>
-          <p>Many customers searching for <strong>Relocating Services Near Me in  $city</strong> also ask about part-load shifting. We handle that too — especially for students and small families. Temporary storage is also available for customers waiting for possession dates.</p>
-        </div>
+    $htmlcontent1 = "<h2h3>Why Choose Omraj Packers and Movers for Shifting in $city?</h2>
 
-       
+          <p>The best moving company is not just the most affordable one. In addition, you should look for a reliable team who treats your goods carefully and explains the charges of the service.</p>
+
+          <ol><li><span class='fw-bold'>Proper Packing of the House Goods</span>: We use proper cartons, bubble wraps, sheets and furniture covers in order to protect your things.</li>
+
+<li><span class='fw-bold'>Professional and Cooperative Staff</span>: Our team members treat house goods, office goods, furniture and other items carefully during the entire shifting process.</li>
+
+<li><span class='fw-bold'>Suitable Vehicles for Every Need</span>: Vehicle selection depends on the volume of the consignment and the distance to be travelled.</li>
+
+<li><span class='fw-bold'>Local and Domestic Shifting Services</span>: Whether you want to relocate within $city or other Indian city, we can discuss the suitable transport plan.</li>
+
+<li><span class='fw-bold'>Detailed Estimate of Moving Charges</span>: Charges are calculated according to the services and labour required.</li>
+
+<li><span class='fw-bold'>Vehicle Transportation Service</span>: We plan the transportation according to the vehicle's type, pick up address, destination and delivery requirement.</li>
+
+<li><span class='fw-bold'>Warehousing and Storage Solutions</span>: In case you are planning to move later when your new house becomes available, we can help you out.</li></ol>
 
    ";
-   $htmlcontent2 = "
-    <!-- Why Choose Professional Movers -->
-        <div class='city-content-card mt-4'>
-          <h3 class='city-section-title-sm'>Why Experienced Movers in  $city Make Relocation Easier</h3>
-          <p>Professional relocation is about timing, coordination, and packing quality. Fragile kitchen items? Packed separately. Glass tables? Corner protected. Washing machine installation? Done carefully after unloading.</p>
-          <p>A trained mover in <strong> $city</strong> understands apartment restrictions, society permissions, local transport timing, and road conditions — without unnecessary delays. Our staff uses lifting belts, furniture sliders, and layered wrapping for delicate items.</p>
-          <p>We keep pricing fair: transparent quotations, no hidden loading charges, and clear discussion before booking is confirmed.</p>
 
-      
-        </div>
+   $htmlcontent2 = "<h3>Case Study of Household Shifting: 2 BHK Shifting from $city to Another City</h3>
+
+          <p>A family moving from their rented 2 BHK apartment in $city to another city due to the job opportunity of one family member. They have a double bed, a refrigerator, washing machine, dining table, kitchen utensil and several cartons of personal belongings. Their prime concern is the delivery of all goods without causing any damage to furniture and delay in the shifting process. First, they need to estimate the volume of the goods and find the items that will require additional protection. After that, the packing team will prepare the cartons, pack the furniture and protect the electrical appliance before loading them into a suitable vehicle.</p>
+
+          <p>The transportation plan will be made according to the total distance, road condition and estimated delivery time. After reaching the destination, the unloading team will place the cartons and furniture in the appropriate room.</p>
+
+         ";
+
+   $htmlcontent3 = "<h3>Contact Omraj Packers and Movers in $city for a Moving Estimate</h3>
+
+          <p>Are you planning to shift your house, office, car or bike? Call us at $phone in order to discuss your requirement, services available and the estimate of your shifting.</p>
    ";
 } 
