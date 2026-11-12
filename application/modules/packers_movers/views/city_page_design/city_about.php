@@ -100,31 +100,93 @@ $city_reviews = [
     ]
 ];
 
-// City FAQs
-$city_faqs = [
-    [
-        'q' => "How are moving and packing charges calculated in $city?",
-        'a' => "Charges depend on the volume of goods (1 BHK, 2 BHK, 3 BHK), distance between origin and destination in or outside $city, floor levels, lift availability, and packing quality. Upfront transparent quotations without hidden charges."
-    ],
-    [
-        'q' => "Do you provide transit insurance for shifting in $city?",
-        'a' => "Yes, we provide 100% comprehensive transit insurance covering your household goods, electronics, and vehicles against any transit risks or accidental damage during the move."
-    ],
-    [
-        'q' => "How early should I book my relocation in $city?",
-        'a' => "We recommend booking 2 to 4 days in advance. For month-end, weekend, or festive moves in $city, booking 5 to 7 days ahead guarantees your preferred moving slot and dedicated transport vehicle."
-    ],
-    [
-        'q' => "Can you transport my two-wheeler or car from $city?",
-        'a' => "Absolutely! We provide enclosed car carrier trailers and specialized wooden crating for two-wheelers with safe door-to-door delivery from $city to any location across India."
-    ],
-    [
-        'q' => "Do your team members help in unpacking and rearranging items?",
-        'a' => "Yes, our trained crew assists in careful unloading, unpacking, and positioning heavy furniture and large appliances at your new residence in $city."
-    ]
-];
 ?>
+<?php
+$city_key = strtolower(trim($city));
 
+if ($city_key === 'delhi ') {
+
+    // Delhi FAQs
+    $city_faqs = [
+        [
+            'q' => "How Much Do Packers and Movers Charge in Delhi?",
+            'a' => "For local shifting inside Delhi, charges usually start from <b>₹3,500</b> for a 1 BHK. The final price depends on the floor, lift availability, distance and the amount of goods."
+        ],
+        [
+            'q' => "Do You Handle Shifting in Narrow Lanes and Society Gates with Timing Rules?",
+            'a' => "Yes. Tell us your society's entry timings and parking rules beforehand and we will plan the vehicle size and arrival time accordingly."
+        ],
+        [
+            'q' => "Can You Shift From Delhi to Another City?",
+            'a' => "Yes, we handle both local and intercity moves from Delhi. Share your pickup and drop address and we will send you a quote."
+        ],
+    ];
+
+} elseif ($city_key === 'gaya ') {
+
+    // Gaya FAQs
+    $city_faqs = [
+        [
+            'q' => "What Is the Starting Charge for House Shifting in Gaya?",
+            'a' => "Local house shifting in Gaya starts from around <b>₹3,000</b>. Larger homes and longer routes will cost more, so it is best to ask for a quote."
+        ],
+        [
+            'q' => "Do You Provide Packing Material and Labour in Gaya?",
+            'a' => "Yes, packing material and trained labour are included in our service. You can also take only transport if you want to pack things yourself."
+        ],
+        [
+            'q' => "Is Insurance Available for My Goods?",
+            'a' => "Yes, we can discuss insurance before shifting. Please read the policy terms and claim conditions before your goods are dispatched."
+        ],
+    ];
+
+} else {
+
+    // Default FAQs (all other cities)
+    $city_faqs = [
+        [
+            'q' => "How Much Do Packers and Movers Charge for Shifting of Household Goods in $city?",
+            'a' => "The charges depend upon the size of your house, volume of the goods, total distance, packing material and labour required. The starting charge of local shifting can be <b>₹3,000</b>. But the charge for larger household shifting or interstate shifting can be much higher than this. You can ask for an estimate according to your requirement."
+        ],
+        [
+            'q' => "Do You Provide Local and Domestic Relocation Services?",
+            'a' => "Yes, we do provide local and domestic moving services. Please provide your pick up and destination address, moving date and size of the house so that we could discuss the transportation and its estimated charges."
+        ],
+        [
+            'q' => "Can I Get Insurance Coverage of My Household Goods During Transporting?",
+            'a' => "Insurance coverage options can be discussed before shifting. The protection will depend upon the selected policy, declared goods, exceptions and conditions of claims. Always check the policy details before the dispatch of your belongings."
+        ],
+    ];
+}
+?>
+<style>
+    .city-box { border-left: 7px solid #061d5b !important; }
+ 
+    /* flatten any inner card styling coming from $htmlcontent1 */
+    .city-box .city-content > * { border: 0 !important; box-shadow: none !important; background: none !important; padding: 0 !important; margin-left: 0 !important; margin-right: 0 !important; }
+    .city-box .city-content h1, .city-box .city-content h2, .city-box .city-content h3 { color: #061d5b; font-weight: 700; font-size: clamp(1.4rem, 2.4vw, 2rem); line-height: 1.25; }
+    .city-box .city-content .text-brand-red { color: #e30613; }
+    .city-box .city-content p, .city-box .city-content li { color: #3a4256; line-height: 1.75; }
+ 
+    /* image fills the full height of the row, so it never spills out of the card */
+    .city-box .city-media { height: 100%; min-height: 340px; background: #e9eef7; }
+    .city-box .city-badge { background: #061d5b; }
+    .city-box .city-badge-line { height: 3px; background: #e30613; border-radius: 3px; }
+ 
+    /* tablet & mobile */
+    @media (max-width: 991.98px) {
+        .city-box .city-media { height: auto; min-height: 0; aspect-ratio: 16 / 10; }
+    }
+    @media (max-width: 575.98px) {
+        .city-box { border-left-width: 5px !important; padding: 1.25rem !important; }
+        .city-box .city-content p, .city-box .city-content li { font-size: .95rem; line-height: 1.7; }
+        .city-box .city-media { aspect-ratio: 4 / 3; }
+        .city-box .city-badge { margin: .6rem !important; padding: .45rem .7rem !important; gap: .6rem !important; }
+        .city-box .city-badge i { font-size: 1.4rem !important; }
+        .city-box .city-badge .small { font-size: .7rem; }
+        .city-box .city-badge .fs-5 { font-size: 1rem !important; }
+    }
+</style>
 <!-- ==========================================================================
      City Relocation & About Section
      ========================================================================== -->
@@ -132,61 +194,38 @@ $city_faqs = [
     <div class="container">
 
         <!-- 1. First Container: Hero About Box (As per Image 2 Design) -->
-        <div class="city-hero-about-box city-border-line-blue p-4 p-md-5 bg-white rounded-4 shadow-sm border mb-5">
-            <div class="row align-items-center g-4 g-lg-5">
-
-                <!-- Left Content Column -->
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <span class="city-head-dash"></span>
-                        <span class="city-head-tag text-uppercase fw-bold">RELOCATION SERVICES IN <?= strtoupper($city) ?></span>
-                    </div>
-
-                    <h2 class="city-head-title fw-bold mb-3">
-                        Your Trusted Packers and Movers <span class="text-brand-red">in <?= $city ?></span>
-                    </h2>
-
-                    <p class="city-head-lead text-contrast mb-3">
-                        <strong><?= $company3  ?></strong> provides
-                        professional packers and movers services in <strong><?= $city ?></strong> for home relocation,
-                        office shifting, vehicle transportation and more. We ensure a smooth, safe and stress-free
-                        moving experience with high-quality packing, timely delivery and complete customer support.
-                    </p>
-
-                    <p class="text-contrast mb-0">
-                        Whether you are moving within <?= $city ?> or shifting goods interstate across India, our
-                        trained team provides hassle-free packing, transit protection, and dependable door-to-door
-                        delivery.
-                    </p>
+        <section class="city-about-section py-5">
+    <div class="container">
+ 
+        <div class="city-box bg-white rounded-4 shadow-sm border p-4 p-md-5 mb-5">
+            <div class="row g-4 g-lg-5">
+ 
+                <div class="col-12 col-lg-6 city-content">
+                    <?php echo $htmlcontent; ?>
                 </div>
-
-                <!-- Right Media Frame Column (City Image Inserted with Floating Location Badge) -->
+ 
                 <div class="col-12 col-lg-6">
-                    <div class="city-media-frame position-relative rounded-4 overflow-hidden shadow-sm d-flex align-items-center justify-content-center">
-                        <img src="<?= base_url('assets/img/city.jpg') ?>" 
-                            alt="<?=$company3?>in <?= $city ?>"
-                            class="city-media-img position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                            id="city-about-hero-img"
-                            loading="lazy">
-
-                        <!-- Floating Location Badge on Bottom-Right of Media Frame -->
-                        <div class="city-media-location-badge position-absolute bottom-0 end-0 m-3 d-flex align-items-center gap-3 p-2 px-3 rounded-3 shadow">
-                            <i class="bi bi-geo-alt-fill text-white fs-2"></i>
-                            <div class="text-white text-start">
-                                <div class="city-badge-sub lh-sm">Reliable Relocation<br>Services Across</div>
-                                <div class="city-badge-city fw-bold text-white lh-sm mt-1"><?= $city ?></div>
-                                <div class="city-badge-underline"></div>
+                    <div class="city-media position-relative rounded-4 overflow-hidden shadow-sm">
+                        <img src="<?= base_url('assets/img/city.jpg') ?>" alt="<?= $company3 ?> in <?= $city ?>"
+                            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" loading="lazy">
+ 
+                        <div class="city-badge position-absolute bottom-0 end-0 m-3 d-flex align-items-center gap-3 py-2 px-3 rounded-3 shadow text-white">
+                            <i class="bi bi-geo-alt-fill fs-2"></i>
+                            <div>
+                                <div class="small lh-sm">Reliable Relocation<br>Services Across</div>
+                                <div class="fw-bold fs-5 lh-sm mt-1"><?= $city ?></div>
+                                <div class="city-badge-line"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+ 
             </div>
         </div>
 
         <!-- 2. Second Container: Intro Content & Feature Pills from city_content.php -->
         <div class="city-card-box city-border-line-red p-4 p-md-5 mb-5 bg-white rounded-4 shadow-sm border">
-            <?= $clean_htmlcontent ?>
+            <?php echo $htmlcontent1; ?>
         </div>
 
         <!-- 3. Third Container: 4-Feature Trust Strip (As requested in image) -->
@@ -246,6 +285,11 @@ $city_faqs = [
                 </div>
 
             </div>
+        </div>
+
+        <!-- 2. new content section -->
+        <div class="city-card-box city-border-line-red p-4 p-md-5 mb-5 bg-white rounded-4 shadow-sm border">
+            <?php echo $htmlcontent2; ?>
         </div>
 
         <!-- 4. Fourth Container: Moving Process Flow (As per Image 1 Design) -->
@@ -347,6 +391,11 @@ $city_faqs = [
                 </div>
 
             </div>
+        </div>
+
+        <!-- 2. new content section -->
+        <div class="city-card-box city-border-line-red p-4 p-md-5 mb-5 bg-white rounded-4 shadow-sm border">
+            <?php echo $htmlcontent3; ?>
         </div>
 
         <!-- 5. Areas Near City (Open Section, Not in a Container Card - Matching User Request) -->
