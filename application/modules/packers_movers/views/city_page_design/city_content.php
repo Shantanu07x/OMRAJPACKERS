@@ -21,7 +21,7 @@ if (strtolower($city) == "") {
             </p>
 
             <p>
-              Moving may not be an easy task as you have much work to do such as packing furniture, kitchen appliances, fragile and valuable goods, documents etc. Our team members treat goods carefully, talk politely and perform shifts according to the schedule. We choose vehicles according to the volume of the consignment, small goods carriers in case of small shifting and large closed trucks for heavy shifting and long distance transportation. Before dispatching, we consider the road condition, total distance in kilometres, restrictions along the route and estimated travelling time. GPS tracking is available if the vehicle and transport arrangement support it. 
+              Moving may not be an easy task as you have much work to do such as packing furniture, kitchen appliances, fragile and valuable goods, documents etc. Our team members treat goods carefully, talk politely and perform shifts according to the schedule. We choose vehicles according to the volume of the consignment, small goods carriers in case of small shifting and large closed trucks for heavy shifting and long distance transportation, For example:- the major logistic related cities like <b><a href='https://omrajpackers.com/ara-packers-movers-bihar' class='text-decoration-none text-danger'>Ara</b></a> and somewhat <b><a href='https://omrajpackers.com/jamalpur-packers-movers-bihar' class='text-decoration-none text-danger'>Jamalpur</a></b> as well. Before dispatching, we consider the road condition, total distance in kilometres, restrictions along the route and estimated travelling time. GPS tracking is available if the vehicle and transport arrangement support it. 
             </p>
    ";
 
